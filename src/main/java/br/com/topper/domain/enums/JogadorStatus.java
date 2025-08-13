@@ -1,6 +1,6 @@
-package br.com.topper.dto.enums;
+package br.com.topper.domain.enums;
 
-public enum StatusEnum {
+public enum JogadorStatus {
 
     PROVAVEL(1, "Provável"),
     DUVIDA(2, "Dúvida"),
@@ -10,7 +10,7 @@ public enum StatusEnum {
     private Integer codigo;
     private String nome;
 
-    StatusEnum(Integer codigo, String nome) {
+    JogadorStatus(Integer codigo, String nome) {
         this.codigo = codigo;
         this.nome = nome;
     }

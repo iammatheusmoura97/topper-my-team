@@ -1,4 +1,4 @@
-package br.com.topper.dto.entity;
+package br.com.topper.adapters.out;
 
 import br.com.topper.dto.enums.StatusEnum;
 import jakarta.persistence.Entity;
@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Player {
+public class PlayerEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

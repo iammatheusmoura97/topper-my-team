@@ -1,6 +1,6 @@
-package br.com.topper.dto.enums;
+package br.com.topper.domain.enums;
 
-public enum EnumFormacao {
+public enum Formacoes {
 
     FORMACAO_4_3_3(1, "4-3-3", 3, 3, 2, 2),
     FORMACAO_4_4_2(2, "4-3-3", 2, 4, 2, 2),
@@ -14,7 +14,7 @@ public enum EnumFormacao {
     private Integer qtdZagueiro;
     private Integer qtdLaterais;
 
-    EnumFormacao(Integer codigo, String nome, Integer qtdAtacantes, Integer qtdMeioCampistas, Integer qtdZagueiro, Integer qtdLaterais) {
+    Formacoes(Integer codigo, String nome, Integer qtdAtacantes, Integer qtdMeioCampistas, Integer qtdZagueiro, Integer qtdLaterais) {
         this.codigo = codigo;
         this.nome = nome;
         this.qtdAtacantes = qtdAtacantes;
