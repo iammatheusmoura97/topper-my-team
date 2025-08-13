@@ -1,11 +1,11 @@
 package br.com.topper.domain;
 
-import br.com.topper.dto.enums.StatusEnum;
+import br.com.topper.domain.enums.JogadorStatus;
 
 public class Player {
     private Long id;
     private String name;
-    private StatusEnum status;
+    private JogadorStatus status;
     private Double price;
     private String club;
     private String position;
@@ -27,11 +27,11 @@ public class Player {
         this.name = name;
     }
 
-    public StatusEnum getStatus() {
+    public JogadorStatus getStatus() {
         return status;
     }
 
-    public void setStatus(StatusEnum status) {
+    public void setStatus(JogadorStatus status) {
         this.status = status;
     }
 
