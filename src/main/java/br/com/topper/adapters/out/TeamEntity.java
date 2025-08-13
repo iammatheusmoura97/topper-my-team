@@ -1,15 +1,16 @@
-package br.com.topper.dto.entity;
+package br.com.topper.adapters.out;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.*;
+import lombok.Getter;
+import lombok.ToString;
 
 @Entity
 @Getter
 @ToString
-public class Team {
+public class TeamEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,12 +20,11 @@ public class Team {
     private String ownerName;
     private Double teamValue;
 
-    public Team() {}
+    public TeamEntity() {}
 
-    public Team(String name, String ownerName, Double teamValue) {
+    public TeamEntity(String name, String ownerName, Double teamValue) {
         this.name = name;
         this.ownerName = ownerName;
         this.teamValue = teamValue;
     }
-
 }

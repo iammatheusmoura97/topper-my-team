@@ -1,4 +1,4 @@
-package br.com.topper.dto.response;
+package br.com.topper.adapters.in.response;
 
 import lombok.Builder;
 
@@ -14,4 +14,5 @@ public class TeamResponseDTO {
         this.nomeDonoTime = nomeDonoTime;
         this.patrimonio = patrimonio;
     }
+
 }
